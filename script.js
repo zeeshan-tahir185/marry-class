@@ -69,12 +69,35 @@
 //     console.log(index , data);
 //  })
 
-let obj = {
-  name: "Zeeshan",
-  phy: 20,
-  math: 25,
-  com: 30,
-};
-for (data in obj) {
-  console.log(data, obj[data]);
-}
+// let obj = {
+//   name: "Zeeshan",
+//   phy: 20,
+//   math: 25,
+//   com: 30,
+// };
+// for (data in obj) {
+//   console.log(data, obj[data]);
+// }
+// alert("this is a alert")
+// console.log(confirm("Are you sur you have to deleet it "));
+// let name=prompt("Please write your name")
+// confirm("Are you sure that your name is "+ name)
+
+// Events in js (onclick, onchange, onmouseover, onmouseenter etc), DOM
+// function Func1(){
+//   console.log("Function called");
+// }
+
+// DOM
+// let name=document.getElementById("name").value
+// let email=document.getElementById("email").value
+
+// console.log(name , email, age);
+// map function
+let arr = [20, 30, 40, 50];
+
+arr.map(function (i, index) {
+  console.log(i);
+});
+// ES6 (Advance JS)
+// let, var, const , arrow functions , template litterals, arrays destructuring, object destructuring, rest op, spread op, promises, async await
