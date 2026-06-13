@@ -94,10 +94,124 @@
 
 // console.log(name , email, age);
 // map function
-let arr = [20, 30, 40, 50];
+// let arr = [20, 30, 40, 50];
 
-arr.map(function (i, index) {
-  console.log(i);
-});
+// arr.map(function (i, index) {
+//   console.log(i);
+// });
 // ES6 (Advance JS)
 // let, var, const , arrow functions , template litterals, arrays destructuring, object destructuring, rest op, spread op, promises, async await
+// function Sum(){
+//   console.log("function");
+// }
+// let Sum=(a)=>console.log("function")
+
+// Sum(20,39)
+
+// let arr=[10,20,30]
+// arr.forEach(()=>{
+
+// })
+// let name="Zeeshan"
+// let age=25
+// let country="Pakistan"
+// console.log("My name is " + name + " and my age is " + age + "and my country is " + country);
+// console.log(`My Name is ${name} and my age is ${age} and my country is ${country}`);
+
+// if(age<18){
+
+// }
+// else if(age>18){
+
+// }
+// age<18? console.log("dkf"): age>18? console.log("dkf"):  console.log("dkf")
+
+// console.log(`${age<18}?age is less then 18: ${age>18}? age is greater then 18: age is equal to 18:`);
+
+// array of objects
+// let student = [
+//   {
+//     name: "Zeeshan",
+//     age: 26,
+//   },
+//   {
+//     name: "Zeeshan",
+//     age: 26,
+//   },
+//   {
+//     name: "Zeeshan",
+//     age: 26,
+//   },
+// ];
+
+// let backend_data=[10,20,30]
+// [phy, maths, comp]=backend_data
+// console.log(phy);
+
+// let backend_data=["Zeeshan", 20,30,40]
+
+// let Sum = (name, ...marks) => {
+// let sum = phy + eng + comp;
+// console.log(`the total number of ${name}: ${sum}`);
+//   console.log(marks);
+
+// };
+
+// Sum(...backend_data);
+
+// let arr1=[10,20,30,40]
+// let arr2=[50,60,70,80]
+// let arr3=[...arr1, ...arr2]
+// console.log("concating the array", arr3);
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((index) => {
+    index
+      .json()
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+// console.log(data);
+
+// .then(response => response.json())
+// .then(json => console.log(json))
+// axios
+
+let fetchData = async () => {
+  console.log("first");
+
+  await fetch("https://jsonplaceholder.typicode.com/todos/1")
+    .then((index) => {
+      index
+        .json()
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+  console.log("Second");
+};
+
+
+
+fetchData();
+getDatafromAnotherFile()
+getDataFromInputOutput()
+console.log("JKKJJKksa");
+
+// let Sum=()=>{
+
+// }
